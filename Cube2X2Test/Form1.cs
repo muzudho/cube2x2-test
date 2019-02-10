@@ -1,12 +1,10 @@
 ﻿namespace Grayscale.Cube2X2Test
 {
     using System;
-    using System.Collections.Generic;
     using System.Diagnostics;
     using System.Globalization;
-    using System.IO;
-    using System.Text;
     using System.Windows.Forms;
+    using Grayscale.Commons;
 
     /// <summary>
     /// 2x2のキューブ。
@@ -19,33 +17,34 @@
         private string previousBoardText;
 
         /// <summary>
-        /// 0: 定跡生成フェーズ。
-        /// 1: 検査フェーズ。
-        /// </summary>
-        private int phase;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="Form1"/> class.
         /// </summary>
         public Form1()
         {
             this.InitializeComponent();
-            this.SetNewGame();
+
+            if (string.IsNullOrEmpty(CommandLineParameter.Position))
+            {
+                this.SetNewGame(AbstractPosition.StartPosition);
+            }
+            else
+            {
+                this.SetNewGame(CommandLineParameter.Position);
+            }
 
             // 定跡読込。
             Book.Read();
-
-            this.timer1.Start();
         }
 
         /// <summary>
         /// ゲーム開始状態に戻します。
         /// </summary>
-        public void SetNewGame()
+        /// <param name="startPosition">初期局面文字列。</param>
+        public void SetNewGame(string startPosition)
         {
             Record.SetNewGame();
-            this.developmentUserControl1.SetNewGame();
-            this.previousBoardText = this.developmentUserControl1.BoardText;
+            this.normalizationUserControl1.GetDevelopmentUserControl(0).SetPosition(startPosition);
+            this.previousBoardText = this.normalizationUserControl1.GetDevelopmentUserControl(0).BoardText;
         }
 
         /// <summary>
@@ -53,11 +52,12 @@
         /// </summary>
         private void GenerateBookRow()
         {
+            /*
             // 0～11。
             int handle = MovePicker.MakeMove();
 
             // キューブをひねる。
-            this.developmentUserControl1.RotateOnly(handle);
+            this.normalizationUserControl1.GetDevelopmentUserControl(0).RotateOnly(handle);
 
             // 正規化した局面を作成。
             // var normalizedPosition = NormalizedPosition.Build(this.developmentUserControl1.DevelopmentTiles);
@@ -67,7 +67,7 @@
 
             // 定跡作成。
             // 現盤面 前盤面 指し手 初期局面からの手数
-            var currentBoardText = this.developmentUserControl1.BoardText;
+            var currentBoardText = this.normalizationUserControl1.GetDevelopmentUserControl(0).BoardText;
             var bookRecord = new BookRow(this.previousBoardText, handle, Record.Ply);
 
             bool newRecord = false;
@@ -113,9 +113,10 @@
             // しかし それでは探索が広がらないので、99手まで続けることにする。
             if (Record.Ply > 99)
             {
-                this.SetNewGame();
+                this.SetNewGame(AbstractPosition.StartPosition);
                 this.phase = 1;
             }
+            */
         }
 
         /// <summary>
@@ -123,6 +124,7 @@
         /// </summary>
         private void Inspector()
         {
+            /*
             // 定跡を適当に選ぶ。
             (var currentPositionText, var bookRow) = Book.RandomRow;
 
@@ -179,10 +181,12 @@
             }
 
             this.phase = 0;
+            */
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            /* TODO 変更。
             var rand = new Random();
 
             if (this.phase == 0)
@@ -195,6 +199,7 @@
                 // 検査フェーズ。
                 this.Inspector();
             }
+            */
         }
     }
 }

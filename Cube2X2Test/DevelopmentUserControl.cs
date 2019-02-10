@@ -2,6 +2,7 @@
 {
     using System.Drawing;
     using System.Windows.Forms;
+    using Grayscale.Commons;
 
     /// <summary>
     /// 展開図コントロール。
@@ -61,11 +62,12 @@
         }
 
         /// <summary>
-        /// ゲーム開始状態に戻します。
+        /// 局面を設定します。
         /// </summary>
-        public void SetNewGame()
+        /// <param name="position">局面文字列。</param>
+        public void SetPosition(string position)
         {
-            this.DevelopmentPosition.SetNewGame();
+            this.DevelopmentPosition.SetPosition(position);
         }
 
         /// <summary>

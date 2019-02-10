@@ -59,170 +59,170 @@
             // 
             // tile0
             // 
-            this.tile0.Location = new System.Drawing.Point(143, 3);
+            this.tile0.Location = new System.Drawing.Point(64, 3);
             this.tile0.Name = "tile0";
-            this.tile0.Size = new System.Drawing.Size(64, 64);
+            this.tile0.Size = new System.Drawing.Size(24, 24);
             this.tile0.TabIndex = 0;
             // 
             // tile1
             // 
-            this.tile1.Location = new System.Drawing.Point(213, 3);
+            this.tile1.Location = new System.Drawing.Point(94, 3);
             this.tile1.Name = "tile1";
-            this.tile1.Size = new System.Drawing.Size(64, 64);
+            this.tile1.Size = new System.Drawing.Size(24, 24);
             this.tile1.TabIndex = 1;
             // 
             // tile2
             // 
-            this.tile2.Location = new System.Drawing.Point(143, 73);
+            this.tile2.Location = new System.Drawing.Point(64, 33);
             this.tile2.Name = "tile2";
-            this.tile2.Size = new System.Drawing.Size(64, 64);
+            this.tile2.Size = new System.Drawing.Size(24, 24);
             this.tile2.TabIndex = 2;
             // 
             // tile7
             // 
-            this.tile7.Location = new System.Drawing.Point(73, 213);
+            this.tile7.Location = new System.Drawing.Point(33, 91);
             this.tile7.Name = "tile7";
-            this.tile7.Size = new System.Drawing.Size(64, 64);
+            this.tile7.Size = new System.Drawing.Size(24, 24);
             this.tile7.TabIndex = 2;
             // 
             // tile6
             // 
-            this.tile6.Location = new System.Drawing.Point(3, 213);
+            this.tile6.Location = new System.Drawing.Point(3, 91);
             this.tile6.Name = "tile6";
-            this.tile6.Size = new System.Drawing.Size(64, 64);
+            this.tile6.Size = new System.Drawing.Size(24, 24);
             this.tile6.TabIndex = 2;
             // 
             // tile4
             // 
-            this.tile4.Location = new System.Drawing.Point(3, 143);
+            this.tile4.Location = new System.Drawing.Point(3, 61);
             this.tile4.Name = "tile4";
-            this.tile4.Size = new System.Drawing.Size(64, 64);
+            this.tile4.Size = new System.Drawing.Size(24, 24);
             this.tile4.TabIndex = 2;
             // 
             // tile5
             // 
-            this.tile5.Location = new System.Drawing.Point(73, 143);
+            this.tile5.Location = new System.Drawing.Point(33, 61);
             this.tile5.Name = "tile5";
-            this.tile5.Size = new System.Drawing.Size(64, 64);
+            this.tile5.Size = new System.Drawing.Size(24, 24);
             this.tile5.TabIndex = 2;
             // 
             // tile8
             // 
-            this.tile8.Location = new System.Drawing.Point(143, 143);
+            this.tile8.Location = new System.Drawing.Point(63, 61);
             this.tile8.Name = "tile8";
-            this.tile8.Size = new System.Drawing.Size(64, 64);
+            this.tile8.Size = new System.Drawing.Size(24, 24);
             this.tile8.TabIndex = 2;
             // 
             // tile3
             // 
-            this.tile3.Location = new System.Drawing.Point(213, 73);
+            this.tile3.Location = new System.Drawing.Point(94, 33);
             this.tile3.Name = "tile3";
-            this.tile3.Size = new System.Drawing.Size(64, 64);
+            this.tile3.Size = new System.Drawing.Size(24, 24);
             this.tile3.TabIndex = 2;
             // 
             // tile9
             // 
-            this.tile9.Location = new System.Drawing.Point(213, 143);
+            this.tile9.Location = new System.Drawing.Point(94, 61);
             this.tile9.Name = "tile9";
-            this.tile9.Size = new System.Drawing.Size(64, 64);
+            this.tile9.Size = new System.Drawing.Size(24, 24);
             this.tile9.TabIndex = 2;
             // 
             // tile11
             // 
-            this.tile11.Location = new System.Drawing.Point(213, 213);
+            this.tile11.Location = new System.Drawing.Point(94, 91);
             this.tile11.Name = "tile11";
-            this.tile11.Size = new System.Drawing.Size(64, 64);
+            this.tile11.Size = new System.Drawing.Size(24, 24);
             this.tile11.TabIndex = 2;
             // 
             // tile21
             // 
-            this.tile21.Location = new System.Drawing.Point(213, 283);
+            this.tile21.Location = new System.Drawing.Point(94, 121);
             this.tile21.Name = "tile21";
-            this.tile21.Size = new System.Drawing.Size(64, 64);
+            this.tile21.Size = new System.Drawing.Size(24, 24);
             this.tile21.TabIndex = 2;
             // 
             // tile23
             // 
-            this.tile23.Location = new System.Drawing.Point(213, 353);
+            this.tile23.Location = new System.Drawing.Point(94, 151);
             this.tile23.Name = "tile23";
-            this.tile23.Size = new System.Drawing.Size(64, 64);
+            this.tile23.Size = new System.Drawing.Size(24, 24);
             this.tile23.TabIndex = 2;
             // 
             // tile22
             // 
-            this.tile22.Location = new System.Drawing.Point(143, 353);
+            this.tile22.Location = new System.Drawing.Point(63, 151);
             this.tile22.Name = "tile22";
-            this.tile22.Size = new System.Drawing.Size(64, 64);
+            this.tile22.Size = new System.Drawing.Size(24, 24);
             this.tile22.TabIndex = 2;
             // 
             // tile20
             // 
-            this.tile20.Location = new System.Drawing.Point(143, 283);
+            this.tile20.Location = new System.Drawing.Point(63, 121);
             this.tile20.Name = "tile20";
-            this.tile20.Size = new System.Drawing.Size(64, 64);
+            this.tile20.Size = new System.Drawing.Size(24, 24);
             this.tile20.TabIndex = 2;
             // 
             // tile10
             // 
-            this.tile10.Location = new System.Drawing.Point(143, 213);
+            this.tile10.Location = new System.Drawing.Point(64, 91);
             this.tile10.Name = "tile10";
-            this.tile10.Size = new System.Drawing.Size(64, 64);
+            this.tile10.Size = new System.Drawing.Size(24, 24);
             this.tile10.TabIndex = 2;
             // 
             // tile18
             // 
-            this.tile18.Location = new System.Drawing.Point(423, 213);
+            this.tile18.Location = new System.Drawing.Point(184, 91);
             this.tile18.Name = "tile18";
-            this.tile18.Size = new System.Drawing.Size(64, 64);
+            this.tile18.Size = new System.Drawing.Size(24, 24);
             this.tile18.TabIndex = 2;
             // 
             // tile19
             // 
-            this.tile19.Location = new System.Drawing.Point(493, 213);
+            this.tile19.Location = new System.Drawing.Point(214, 91);
             this.tile19.Name = "tile19";
-            this.tile19.Size = new System.Drawing.Size(64, 64);
+            this.tile19.Size = new System.Drawing.Size(24, 24);
             this.tile19.TabIndex = 2;
             // 
             // tile17
             // 
-            this.tile17.Location = new System.Drawing.Point(493, 143);
+            this.tile17.Location = new System.Drawing.Point(213, 61);
             this.tile17.Name = "tile17";
-            this.tile17.Size = new System.Drawing.Size(64, 64);
+            this.tile17.Size = new System.Drawing.Size(24, 24);
             this.tile17.TabIndex = 2;
             // 
             // tile15
             // 
-            this.tile15.Location = new System.Drawing.Point(353, 213);
+            this.tile15.Location = new System.Drawing.Point(154, 91);
             this.tile15.Name = "tile15";
-            this.tile15.Size = new System.Drawing.Size(64, 64);
+            this.tile15.Size = new System.Drawing.Size(24, 24);
             this.tile15.TabIndex = 2;
             // 
             // tile16
             // 
-            this.tile16.Location = new System.Drawing.Point(423, 143);
+            this.tile16.Location = new System.Drawing.Point(183, 61);
             this.tile16.Name = "tile16";
-            this.tile16.Size = new System.Drawing.Size(64, 64);
+            this.tile16.Size = new System.Drawing.Size(24, 24);
             this.tile16.TabIndex = 2;
             // 
             // tile13
             // 
-            this.tile13.Location = new System.Drawing.Point(353, 143);
+            this.tile13.Location = new System.Drawing.Point(154, 61);
             this.tile13.Name = "tile13";
-            this.tile13.Size = new System.Drawing.Size(64, 64);
+            this.tile13.Size = new System.Drawing.Size(24, 24);
             this.tile13.TabIndex = 2;
             // 
             // tile14
             // 
-            this.tile14.Location = new System.Drawing.Point(283, 213);
+            this.tile14.Location = new System.Drawing.Point(124, 91);
             this.tile14.Name = "tile14";
-            this.tile14.Size = new System.Drawing.Size(64, 64);
+            this.tile14.Size = new System.Drawing.Size(24, 24);
             this.tile14.TabIndex = 2;
             // 
             // tile12
             // 
-            this.tile12.Location = new System.Drawing.Point(283, 143);
+            this.tile12.Location = new System.Drawing.Point(124, 61);
             this.tile12.Name = "tile12";
-            this.tile12.Size = new System.Drawing.Size(64, 64);
+            this.tile12.Size = new System.Drawing.Size(24, 24);
             this.tile12.TabIndex = 2;
             // 
             // DevelopmentUserControl
@@ -254,7 +254,7 @@
             this.Controls.Add(this.tile1);
             this.Controls.Add(this.tile0);
             this.Name = "DevelopmentUserControl";
-            this.Size = new System.Drawing.Size(562, 424);
+            this.Size = new System.Drawing.Size(243, 181);
             this.ResumeLayout(false);
 
         }

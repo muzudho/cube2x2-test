@@ -31,31 +31,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.developmentUserControl1 = new Grayscale.Cube2X2Test.DevelopmentUserControl();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.normalizationUserControl1 = new Grayscale.Cube2X2Test.NormalizationUserControl();
             this.SuspendLayout();
             // 
-            // developmentUserControl1
+            // normalizationUserControl1
             // 
-            this.developmentUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.developmentUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.developmentUserControl1.Name = "developmentUserControl1";
-            this.developmentUserControl1.Size = new System.Drawing.Size(800, 450);
-            this.developmentUserControl1.TabIndex = 0;
+            this.normalizationUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.normalizationUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.normalizationUserControl1.Name = "normalizationUserControl1";
+            this.normalizationUserControl1.Size = new System.Drawing.Size(1500, 757);
+            this.normalizationUserControl1.TabIndex = 0;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 16;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
-            // Cube2x2
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.developmentUserControl1);
-            this.Name = "Cube2x2";
+            this.ClientSize = new System.Drawing.Size(1500, 757);
+            this.Controls.Add(this.normalizationUserControl1);
+            this.Name = "Form1";
             this.Text = "2x2キューブ";
             this.ResumeLayout(false);
 
@@ -63,8 +56,7 @@
 
         #endregion
 
-        private DevelopmentUserControl developmentUserControl1;
-        private System.Windows.Forms.Timer timer1;
+        private NormalizationUserControl normalizationUserControl1;
     }
 }
 
