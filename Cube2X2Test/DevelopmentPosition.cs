@@ -1,7 +1,7 @@
 ﻿namespace Grayscale.Cube2X2Test
 {
     using System.Windows.Forms;
-    using Grayscale.Commons;
+    using Grayscale.Cube2X2Commons;
 
     /// <summary>
     /// 展開図用の局面インターフェース。

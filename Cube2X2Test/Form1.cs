@@ -1,10 +1,8 @@
 ﻿namespace Grayscale.Cube2X2Test
 {
     using System;
-    using System.Diagnostics;
-    using System.Globalization;
     using System.Windows.Forms;
-    using Grayscale.Commons;
+    using Grayscale.Cube2X2Commons;
 
     /// <summary>
     /// 2x2のキューブ。
@@ -43,7 +41,7 @@
         public void SetNewGame(string startPosition)
         {
             Record.SetNewGame();
-            this.normalizationUserControl1.GetDevelopmentUserControl(0).SetPosition(startPosition);
+            this.normalizationUserControl1.SetPosition(Position.Parse(startPosition));
             this.previousBoardText = this.normalizationUserControl1.GetDevelopmentUserControl(0).BoardText;
         }
 

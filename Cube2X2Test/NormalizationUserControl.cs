@@ -1,6 +1,8 @@
 ﻿namespace Grayscale.Cube2X2Test
 {
+    using System.Drawing;
     using System.Windows.Forms;
+    using Grayscale.Cube2X2Commons;
 
     /// <summary>
     /// 正規化一覧画面。
@@ -13,6 +15,32 @@
         public NormalizationUserControl()
         {
             this.InitializeComponent();
+        }
+
+        /// <summary>
+        /// 局面を設定。
+        /// </summary>
+        /// <param name="sourcePosition">元となる局面。</param>
+        public void SetPosition(Position sourcePosition)
+        {
+            var sourceBoardText = sourcePosition.BoardText;
+            var isomorphicPositions = IsomorphicPositions.Parse(sourcePosition);
+
+            for (var i = 0; i < IsomorphicPositions.IsomorphicSize; i++)
+            {
+                var development = this.GetDevelopmentUserControl(i);
+                var isomorphicBoardText = isomorphicPositions.IsomorphicPosition[i].BoardText;
+                development.SetPosition(isomorphicBoardText);
+
+                if (isomorphicBoardText == sourceBoardText)
+                {
+                    development.BackColor = Color.White;
+                }
+                else
+                {
+                    development.BackColor = Color.Black;
+                }
+            }
         }
 
         /// <summary>
