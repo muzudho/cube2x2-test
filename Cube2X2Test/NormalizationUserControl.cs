@@ -25,16 +25,22 @@
         {
             var sourceBoardText = sourcePosition.BoardText;
             var isomorphicPositions = IsomorphicPositions.Parse(sourcePosition);
+            (var normalizePosition, var handle) = isomorphicPositions.Normalize(0);
+            var normalizeBoardText = normalizePosition.BoardText;
 
-            for (var i = 0; i < IsomorphicPositions.IsomorphicSize; i++)
+            for (var phase = 0; phase < IsomorphicPositions.Order; phase++)
             {
-                var development = this.GetDevelopmentUserControl(i);
-                var isomorphicBoardText = isomorphicPositions.IsomorphicPosition[i].BoardText;
-                development.SetPosition(isomorphicBoardText);
+                var development = this.GetDevelopmentUserControl(phase);
+                var phaseBoardText = isomorphicPositions.Phase[phase].BoardText;
+                development.SetPosition(phaseBoardText);
 
-                if (isomorphicBoardText == sourceBoardText)
+                if (phaseBoardText == sourceBoardText)
                 {
                     development.BackColor = Color.White;
+                }
+                else if (phaseBoardText == normalizeBoardText)
+                {
+                    development.BackColor = Color.Silver;
                 }
                 else
                 {
