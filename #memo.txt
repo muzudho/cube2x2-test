@@ -1,0 +1,33 @@
+倒すアルゴリズム。
+
+初期局面 yyyy/vvvv/rrrr/bbbb/wwww/gggg の 基準を bbbb/gggg/wwww/yyyy/rrrr/vvvv とする。
+
+^ 0: bbbb/gggg/wwww/yyyy/rrrr/vvvv IndexOf 0.
+^ 1: bbbb/rrrr/gggg/wwww/yyyy/vvvv IndexOf 1.
+^ 2: wwww/bbbb/gggg/vvvv/yyyy/rrrr IndexOf 2.
+^ 3: vvvv/wwww/gggg/rrrr/yyyy/bbbb IndexOf 3.
+^ 4: rrrr/vvvv/gggg/bbbb/yyyy/wwww IndexOf 4.
+^ 5: bbbb/yyyy/rrrr/gggg/wwww/vvvv IndexOf 5.
+
+^ 6: yyyy/bbbb/wwww/vvvv/rrrr/gggg IndexOf 6.
+^ 7: wwww/bbbb/gggg/vvvv/yyyy/rrrr IndexOf 2.
+^ 8: vvvv/wwww/gggg/rrrr/yyyy/bbbb IndexOf 3.
+^ 9: rrrr/vvvv/gggg/bbbb/yyyy/wwww IndexOf 4.
+^ 10: bbbb/rrrr/gggg/wwww/yyyy/vvvv IndexOf 1.
+^ 11: gggg/bbbb/rrrr/vvvv/wwww/yyyy IndexOf 11.
+
+^ 12: vvvv/yyyy/wwww/gggg/rrrr/bbbb IndexOf 12.
+^ 13: vvvv/wwww/gggg/rrrr/yyyy/bbbb IndexOf 3.
+^ 14: rrrr/vvvv/gggg/bbbb/yyyy/wwww IndexOf 4.
+^ 15: bbbb/rrrr/gggg/wwww/yyyy/vvvv IndexOf 1.
+^ 16: wwww/bbbb/gggg/vvvv/yyyy/rrrr IndexOf 2.
+^ 17: vvvv/gggg/rrrr/yyyy/wwww/bbbb IndexOf 17.
+
+^ 18: gggg/vvvv/wwww/bbbb/rrrr/yyyy IndexOf 18.
+^ 19: rrrr/vvvv/gggg/bbbb/yyyy/wwww IndexOf 4.
+^ 20: bbbb/rrrr/gggg/wwww/yyyy/vvvv IndexOf 1.
+^ 21: wwww/bbbb/gggg/vvvv/yyyy/rrrr IndexOf 2.
+^ 22: vvvv/wwww/gggg/rrrr/yyyy/bbbb IndexOf 3.
+^ 23: yyyy/vvvv/rrrr/bbbb/wwww/gggg IndexOf 23.
+
+被りがある。

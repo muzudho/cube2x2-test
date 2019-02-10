@@ -60,6 +60,15 @@
         }
 
         /// <summary>
+        /// ラベルを設定。
+        /// </summary>
+        /// <param name="value">ラベル。</param>
+        public void SetLabel(string value)
+        {
+            this.label1.Text = value;
+        }
+
+        /// <summary>
         /// 局面を設定します。
         /// </summary>
         /// <param name="position">局面文字列。</param>

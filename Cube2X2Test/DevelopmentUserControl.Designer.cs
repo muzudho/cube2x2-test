@@ -55,6 +55,7 @@
             this.tile13 = new System.Windows.Forms.Panel();
             this.tile14 = new System.Windows.Forms.Panel();
             this.tile12 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tile0
@@ -225,10 +226,21 @@
             this.tile12.Size = new System.Drawing.Size(24, 24);
             this.tile12.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(6, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 18);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
             // DevelopmentUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tile19);
             this.Controls.Add(this.tile17);
             this.Controls.Add(this.tile15);
@@ -256,6 +268,7 @@
             this.Name = "DevelopmentUserControl";
             this.Size = new System.Drawing.Size(243, 181);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -285,5 +298,6 @@
         private System.Windows.Forms.Panel tile13;
         private System.Windows.Forms.Panel tile14;
         private System.Windows.Forms.Panel tile12;
+        private System.Windows.Forms.Label label1;
     }
 }

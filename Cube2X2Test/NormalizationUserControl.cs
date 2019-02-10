@@ -1,6 +1,9 @@
 ﻿namespace Grayscale.Cube2X2Test
 {
+    using System.Diagnostics;
     using System.Drawing;
+    using System.Globalization;
+    using System.Text;
     using System.Windows.Forms;
     using Grayscale.Cube2X2Commons;
 
@@ -25,13 +28,55 @@
         {
             var sourceBoardText = sourcePosition.BoardText;
             var isomorphicPositions = IsomorphicPositions.Parse(sourcePosition);
-            (var normalizePosition, var handle) = isomorphicPositions.Normalize(0);
+
+            /*
+            for (var i = 0; i < IsomorphicPositions.Order; i++)
+            {
+                var phaseBoardText = isomorphicPositions.Phase[i].Position.BoardText;
+                Trace.WriteLine(string.Format(
+                    CultureInfo.CurrentCulture,
+                    "/ {0}: {1}",
+                    i,
+                    phaseBoardText));
+            }
+            */
+
+            var normalizePosition = isomorphicPositions.Normalize();
             var normalizeBoardText = normalizePosition.BoardText;
 
-            for (var phase = 0; phase < IsomorphicPositions.Order; phase++)
+            var developmentIndex = 0;
+            foreach (var isomorphicPosition in isomorphicPositions.Phase)
             {
-                var development = this.GetDevelopmentUserControl(phase);
-                var phaseBoardText = isomorphicPositions.Phase[phase].BoardText;
+                var development = this.GetDevelopmentUserControl(developmentIndex);
+
+                var phaseBoardText = isomorphicPosition.Position.BoardText;
+                /*
+                Trace.WriteLine(string.Format(
+                    CultureInfo.CurrentCulture,
+                    "* {0}: {1}",
+                    developmentIndex,
+                    phaseBoardText));
+                 */
+
+                var builder = new StringBuilder();
+                foreach (var direction in isomorphicPosition.DirectionList)
+                {
+                    switch (direction)
+                    {
+                        case Direction.PlusX:
+                            builder.Append("+X");
+                            break;
+                        case Direction.PlusY:
+                            builder.Append("+Y");
+                            break;
+                        case Direction.PlusZ:
+                            builder.Append("+Z");
+                            break;
+                    }
+                }
+
+                development.SetLabel(builder.ToString());
+
                 development.SetPosition(phaseBoardText);
 
                 if (phaseBoardText == sourceBoardText)
@@ -46,6 +91,8 @@
                 {
                     development.BackColor = Color.Black;
                 }
+
+                developmentIndex++;
             }
         }
 
